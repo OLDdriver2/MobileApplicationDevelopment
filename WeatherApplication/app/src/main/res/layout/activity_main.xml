@@ -10,6 +10,7 @@ android:weightSum="8"
 tools:context="com.example.administrator.weather.MainActivity">
 
 <TextView
+    android:id="@+id/dayOfWeek"
     android:layout_width="match_parent"
     android:layout_height="0dp"
     android:layout_marginTop="10dp"
@@ -53,9 +54,10 @@ tools:context="com.example.administrator.weather.MainActivity">
         android:gravity="center"
         android:paddingLeft="40dp"
         android:paddingRight="40dp"
-        android:onClick="btnClick"
         android:text="Go to Calendar"
         android:textColor="#50ffffff" />
+
+
 </LinearLayout>
 
 <LinearLayout
@@ -84,7 +86,7 @@ tools:context="com.example.administrator.weather.MainActivity">
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/rainy_up" />
+                android:src="@drawable/w100" />
 
             <TextView
                 android:id="@+id/tv_location"
@@ -119,7 +121,7 @@ tools:context="com.example.administrator.weather.MainActivity">
                 android:id="@+id/temperature_of_the_day"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="18"
+                android:text="0"
                 android:textColor="@android:color/white"
                 android:textSize="100sp"
                 android:textStyle="bold" />
@@ -132,6 +134,18 @@ tools:context="com.example.administrator.weather.MainActivity">
                 android:textColor="@android:color/white"
                 android:textSize="22sp" />
         </LinearLayout>
+
+        <ImageButton
+            android:background="@drawable/refresh"
+            android:scaleType="fitXY"
+            android:id="@+id/imageButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/linearLayout"
+            android:layout_toRightOf="@+id/linearLayout"
+            android:onClick="btnClick"
+             />
 
 
     </RelativeLayout>
@@ -161,6 +175,7 @@ tools:context="com.example.administrator.weather.MainActivity">
     tools:layout_editor_absoluteY="380dp">
 
     <LinearLayout
+        android:id="@+id/first_image"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -170,15 +185,18 @@ tools:context="com.example.administrator.weather.MainActivity">
         <ImageView
             android:layout_width="48dp"
             android:layout_height="48dp"
-            app:srcCompat="@drawable/rainy_small" />
+            android:src="@drawable/w100n" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/first"
+            android:layout_width="35dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="mon"
             android:textAllCaps="true"
-            android:textColor="#909090" />
+            android:textColor="#000"
+            android:background="@drawable/text_shape"
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -189,11 +207,13 @@ tools:context="com.example.administrator.weather.MainActivity">
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/second_image"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            app:srcCompat="@drawable/partly_sunny_small" />
+            android:src="@drawable/w104n"  />
 
         <TextView
+            android:id="@+id/second"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -210,11 +230,13 @@ tools:context="com.example.administrator.weather.MainActivity">
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/third_image"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            app:srcCompat="@drawable/windy_small" />
+            android:src="@drawable/w200" />
 
         <TextView
+            android:id="@+id/third"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -231,11 +253,13 @@ tools:context="com.example.administrator.weather.MainActivity">
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/fouth_image"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            app:srcCompat="@drawable/sunny_small" />
+            android:src="@drawable/w300" />
 
         <TextView
+            android:id="@+id/fouth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
