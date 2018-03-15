@@ -70,7 +70,8 @@
 > Refresh button is Imagebutton.And the blue circle is just the backgroud of Textview which is bule.
 ## Refresh butoon pressed
 > ![image](https://github.com/OLDdriver2/MobileApplicationDevelopment/blob/master/images/A1-03.PNG?raw=true)
-> It is based on the real data from heweather(https://www.heweather.com/).The API address is https://free-api.heweather.com/s6/weather/forecast?params .The project contains baidumap service,but i haven't don that part.For now,this application uses IP to get your location and weather data.
+> 
+> It is based on the real data from heweather(https://www.heweather.com/).The API address is https://free-api.heweather.com/s6/weather/forecast?params .The project contains baidumap service,but i haven't done that part.For now,this application uses IP to get your location and weather data.
 > 
 > It will reutrn a json string such as
 
