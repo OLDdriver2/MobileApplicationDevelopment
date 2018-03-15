@@ -5,8 +5,11 @@ package com.example.administrator.weather;
  */
 
 public class WeatherInfo {
+    public static String GPSlocation;
+    public static String location;
     public static String nowState;
     public static String firstState;
     public static String secondState;
     public static String thirdState;
+    public static String forthState;
 }
